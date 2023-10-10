@@ -1,25 +1,47 @@
 
 import React from 'react'
-import {FaUserAstronaut} from 'react-icons/fa'
+import Single from '../Assets/img/single.png'
+import Double from '../Assets/img/double.png'
+import Triple from '../Assets/img/triple.png'
 
 export default function Plan() {
   return (
-    <div className='py-[100px] px-2 '>
-        <div className='max-w-[1240px] mx-auto md:grid grid-cols-3 gap-6'>
-            <div className='shadow-xl h-[500px] my-2 hover:scale-105 duration-500'>
-                <FaUserAstronaut className='text-[50px]'/>
-                <h2 className=''>Web Development</h2>
-                <span className=''>$149</span>
-                <p className=''>Lorem Ispam is Symply</p>
-                
-            </div>
-            <div className='shadow-xl h-[500px] bg-gray-100 my-2 hover:scale-105 duration-500'>
-
-            </div>
-            <div className='shadow-xl h-[500px] my-2 hover:scale-105 duration-500'>
-
+    <div className='w-full py-[10rem] px-4 bg-white'>
+            <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
+                <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+                    <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Single} alt="/" />
+                    <h2 className='text-2xl font-bold text-center py-8'>Web development</h2>
+                    <p className='text-center text-4xl font-bold'>$149</p>
+                    <div className='text-center font-medium'>
+                        <p className='py-2 border-b mx-8 mt-8'>Lorem Ipsum is simply </p>
+                        <p className='py-2 border-b mx-8'>Lorem Ipsum is simply dummy text of the printing</p>
+                        <p className='py-2 border-b mx-8'>Lorem Ipsum is simply dumm.</p>
+                    </div>
+                    <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start Trial</button>
+                </div>
+                <div className='w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300'>
+                    <img className='w-20 mx-auto mt-[-3rem] bg-transparent' src={Double} alt="/" />
+                    <h2 className='text-2xl font-bold text-center py-8'>Digital Marketing</h2>
+                    <p className='text-center text-4xl font-bold'>$149</p>
+                    <div className='text-center font-medium'>
+                        <p className='py-2 border-b mx-8 mt-8'>Lorem Ipsum is simply </p>
+                        <p className='py-2 border-b mx-8'>Lorem Ipsum is simply dummy text of the printing</p>
+                        <p className='py-2 border-b mx-8'>Lorem Ipsum is simply dumm.</p>
+                    </div>
+                    <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start Trial</button>
+                </div>
+                <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+                    <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Triple} alt="/" />
+                    <h2 className='text-2xl font-bold text-center py-8'>App Development</h2>
+                    <p className='text-center text-4xl font-bold'>$149</p>
+                    <div className='text-center font-medium'>
+                        <p className='py-2 border-b mx-8 mt-8'>Lorem Ipsum is simply </p>
+                        <p className='py-2 border-b mx-8'>Lorem Ipsum is simply dummy text of the printing</p>
+                        <p className='py-2 border-b mx-8'>Lorem Ipsum is simply dumm.</p>
+                    </div>
+                    <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start Trial</button>
+                </div>
             </div>
         </div>
-    </div>
   )
 }
